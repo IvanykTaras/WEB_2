@@ -1,0 +1,475 @@
+%abs
+	position: absolute
+
+%tx-n
+	text-decoration: none
+
+%op
+	opacity: 0.5
+
+%st
+	width: 288px
+	border:
+			left: 1px solid rgb(181,207,235)
+			top: 1px solid rgb(181,207,235)
+%col
+	width: 138px
+	height: 38px
+%text
+	font-size: 13px
+	color: rgb(94,94,94)
+	padding-top: 40px
+	text-align: justify
+%min-fon
+	float: left
+	margin: 0px
+	color: rgb(31,99,173)
+%div_center
+	margin: 0px 8.5px 0px 8.5px
+	padding: 0px 8.5px 0px 8.5px
+	border:
+		left: 1px solid rgb(222,222,222)
+		right: 1px solid rgb(222,222,222)
+
+$aq: aqua
+
+$wh: white
+
+*
+	font-family: Arial
+
+.bg
+	height: 1199px
+	width: 1470px
+	position: relative
+	margin: 0px auto
+
+	.img-bg
+		width: 1470px
+		height: 1199px
+
+	.img-logo
+		@extend %abs
+		width: 300px
+		height: 155px
+		top: 27px
+		left: 144px
+	.sing
+		@extend %abs
+		left: 827px
+		top: 38px
+		color: white
+		
+		a
+			@extend %tx-n
+			color: white
+			font-size: 16px
+			
+			a:hover
+				@extend %op
+			
+			a:active
+				color: $aq
+	
+	.button-checkout
+		@extend %abs
+		left: 1003px
+		top: 21px
+		
+		img
+			border-radius: 5px
+
+		samp
+			font-size: 26px;
+			@extend %abs
+			left: 71px
+			top: 10px
+		
+		button
+			font-size: 16px
+			@extend %abs
+			left: 150px
+			top: 13px
+			width: 87px
+			height: 25px
+			color: $wh
+			background-color: rgb(68,134,203)
+			border: 1px
+			border-radius: 5px
+			
+			&:hover
+				@extend %op
+	
+			&:active
+				color: $aq
+				
+	.left
+		@extend %abs
+		width: 290px
+		border:
+			left: 1px solid rgb(181,207,235)
+			top: 1px solid rgb(181,207,235)
+		height: 488px
+		left: 188px
+		top: 125px
+		
+		.st_1
+			@extend %st
+			height: 94px
+			background-color: rgb(65,132,204)
+
+			div
+				float: left
+				margin:
+					top: 17px
+					left: 15px
+
+				.min_fon_2
+					@extend %min-fon
+					color: white
+					font-size: 17px
+		
+				samp
+					color: white
+					font-size: 30px
+	
+			.div_center_2
+				margin: 17px 12.5px 0px 12.5px
+				padding: 0px 12.5px 0px 12.5px
+				border:
+					left: 1px solid rgb(222,222,222)
+					right: 1px solid rgb(222,222,222)
+				
+
+		.st_2
+			width: 218px
+			border:
+				left: 1px solid rgb(181,207,235)
+				top: 1px solid rgb(181,207,235)
+			height: 65px
+			background-color: rgb(16,68,123)
+			padding:
+				top: 10px
+				left: 70px
+
+			samp
+				font-size: 17px
+				color: white
+	
+			p
+				font-size: 30px
+				margin: 0px
+				color: white
+			
+		.st_3
+			@extend %st
+			height: 30px
+			background-color: rgb(45,112,183)
+
+			samp
+				color: white
+				float: left
+				font-size: 15px
+				margin:
+					left: 35px
+					top: 5px
+
+		.st_4
+			@extend %st
+			height: 103px
+			background-color: rgb(21,79,141)
+
+			p
+				font-size: 61px
+				color: white
+				margin: 15px 0px 0px 50px
+		
+		.st_5
+			@extend %st
+			height: 88px
+			background-color: rgb(21,79,141)
+			
+			img
+				margin-left: -57px
+	
+			button
+				width: 206px
+				height: 52px
+				@extend %abs
+				top: 325px
+				left: 50px
+				background-color: rgb(47,107,171)
+				border: 1px
+				color: white
+				font-size: 30px
+		
+				&:hover
+					@extend %op 
+			
+				&:active
+					color: $aq
+					opacity: 1
+	
+		.st_6
+			@extend %st
+			height: 86px
+			background-color: rgb(19,74,133)
+			text-align: center
+			
+			p
+				color: white
+				margin: 10px 0px 0px 0px
+				font-size: 17px
+	
+		.map
+			width: 289px
+			height: 281px
+			@extend %abs
+			top: 482px
+			right: 0px
+
+			img
+				@extend %abs
+				left: -190px
+				top: -609px
+				
+		.like
+			width: 280px
+			height: 258.5px
+			@extend %abs
+			top: 763px
+			left: 9px
+			background-color: white
+	
+			p
+				color: rgb(58,112,172)
+				font-size: 15px
+				margin: 0px
+				@extend %abs
+				left: 85px
+				top: 10px
+	
+.bg_2
+	position: relative
+	width: 779px
+	height: 1022px
+	top: -1078px
+	left: 478px
+	
+	img
+		width: 779px
+		height: 1022px
+
+	.top_menu
+		@extend %abs
+		width: 414px
+		height: 38px
+		top: -38px
+		
+		div
+			float: left
+
+			a
+				@extend %tx-n
+				@extend %abs
+	
+				&:hover
+					@extend %op
+			
+				&:active
+					color: $aq
+
+		.left_col
+			@extend %col
+			background-color: rgb(206,206,206)
+			border-radius: 10px 0px 0px 0px
+
+			a
+				color: black 
+				left: 40px
+				top: 10px
+		
+		.center_col
+			@extend %col
+			background-color: rgb(48,111,178) 
+
+			a
+				color: white
+				left: 154px
+				top: 10px
+	
+		.right_col
+			@extend %col
+			background-color: rgb(206,206,206)
+			border-radius: 0px 10px 0px 0px 
+
+			a
+				color: black
+				left: 305px
+				top: 10px
+	
+		div
+			float: left
+
+			a
+				@extend %tx-n
+				@extend %abs
+				font:
+					family: helvetical bold	, Arial	
+					size: 16px
+	
+				&:hover
+					@extend %op
+			
+				&:active
+					color: $aq
+		
+	.details
+		@extend %abs
+		top: 2px
+		width: 466px
+		height: 962px
+		border-right: 1px solid rgb(221,221,221)
+		padding: 28px
+
+		p
+			margin: 0px
+
+		.text_1
+			font-size: 26px
+			color: rgb(25,83,144)
+
+		img
+			width: 468px
+			height: 260px
+			padding-top: 11px
+
+		.text_2
+			@extend %text
+
+		.box
+			margin: 40px 0px 0px 0px
+			width: 247px
+			height: 174px
+
+			.box_grey
+				width: 247px
+				height: 174px
+				border: 1px solid rgb(221,221,221)
+				background-color: rgb(237,237,237)
+	
+			.pn
+				font-size: 17px
+				color: rgb(94,94,94)
+				@extend %abs
+				left: 298px
+				top: 498px
+	
+			samp
+				font-size: 26px
+				color: rgb(94,94,94)
+				@extend %abs
+				left: 298px
+				top: 523px
+	
+			img
+				@extend %abs
+				left: 285px
+				top: 548px
+				width: 55px
+				height: 87px
+	
+			.address
+				font-size: 17px
+				color: rgb(94,94,94)
+				@extend %abs
+				left: 345px
+				top: 568px
+	
+			.text_3
+				font-size: 13px
+				color: rgb(94,94,94)
+				padding-top: 6px
+				@extend %abs
+				left: 345px
+				top: 588px
+		
+		.text_4
+			@extend %text
+		
+		.text_5
+			@extend %text
+				
+	.today_special
+		@extend %abs
+		width: 255px
+		height: 1021px
+		top: 0px
+		right: 0px
+		
+		.today_deals
+			font-size: 22px
+			color: rgb(25,83,144)
+			margin: 36px 0px 0px 24px 
+			padding-bottom: 15px
+		
+		.lorem_1
+			width: 205px
+			height: 162px
+			border-bottom: 1px solid rgb(222,222,222) 
+			margin: 0px auto
+	
+			.ipsum
+				font-size: 16px
+				margin: 0px
+				color: rgb(31,99,173)
+				padding-bottom: 15px
+		
+			.min_fon
+				font-size: 11px		
+				@extend %min-fon
+	
+			div
+				float: left
+			
+				samp
+					font-size: 19px
+	
+			.div_center
+				@extend %div_center
+	
+			img
+				width: 28px
+				height: 28px
+				margin: 50px 0px 0px -40px
+	
+			.grey_box_2
+				border: 1px solid rgb(221,221,221)
+				background-color: rgb(237,237,237)
+				width: 95px
+				height: 70px
+				margin-top: 10px
+			
+			.time
+				font-size: 16px
+				color: rgb(94,94,94)
+				margin: 0px 0px 0px 112px
+	
+			.hours
+				font-size: 17px
+				color: rgb(94,94,94)
+				margin: 0px 0px 0px 112px
+			
+footer
+	@extend %abs
+	left: 620px
+	top: 1150px
+	
+	p
+		color: white
+		font-size: 13px
+
+
+
+
+
